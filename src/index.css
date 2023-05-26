@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+input[type='number']{
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* CSS standard */
+    @apply placeholder-customCyan-300 placeholder:text-xl;
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+
+.tip button{
+  @apply focus:bg-customCyan-600 transition-colors duration-700 hover:bg-customCyan-200 hover:text-customCyan-500;
+}
